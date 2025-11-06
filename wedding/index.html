@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Flowbite CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  h2 { font-family: 'Dancing Script', cursive; }
+</style>
+  <style>
+    .title-font { font-family: 'Playfair Display', serif; }
+  </style>
+
+
+<style>
+  /* Fade Transition for Backgrounds */
+  .hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1.8s ease-in-out;
+  }
+</style>
+<style>
+  .serif-title { font-family: "Cormorant Garamond", serif; }
+</style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ✅ NAVBAR -->
+<nav class="fixed top-0 w-full z-20 bg-transparent backdrop-blur-sm px-8 py-4 flex justify-between items-center text-white">
+  <h1 class="title-font text-2xl">Robbie & Mag</h1>
+
+  <ul class="hidden md:flex items-center gap-8">
+    <li><a href="#" class="hover:text-yellow-300">HOME</a></li>
+
+    <!-- Flowbite Dropdown Example -->
+    <li>
+      <button id="pagesMenu" data-dropdown-toggle="pagesDropdown" class="hover:text-yellow-300 flex items-center gap-1">
+        PAGES <span>▼</span>
+      </button>
+      <div id="pagesDropdown" class="hidden bg-white text-gray-700 shadow-lg rounded p-3 space-y-2">
+        <a href="#">About</a><br>
+        <a href="#">Events</a>
+      </div>
+    </li>
+
+    <li><a href="#" class="hover:text-yellow-300">OUR STORY</a></li>
+    <li><a href="#" class="text-yellow-300 border-b border-yellow-300 pb-1">BLOG</a></li>
+
+    <li>
+      <button id="contactMenu" data-dropdown-toggle="contactDropdown" class="hover:text-yellow-300 flex items-center gap-1">
+        CONTACT <span>▼</span>
+      </button>
+      <div id="contactDropdown" class="hidden bg-white text-gray-700 shadow-lg rounded p-3 space-y-2">
+        <a href="#">Email</a><br>
+        <a href="#">Instagram</a>
+      </div>
+    </li>
+  </ul>
+
+  <a href="#rsvp" class="hidden md:block border border-yellow-500 px-5 py-2 rounded hover:bg-yellow-600 hover:border-yellow-600 transition">
+    RSVP
+  </a>
+</nav>
+
+
+<!-- ✅ HERO SECTION -->
+<section class="relative w-full h-[75vh] flex items-center justify-center overflow-hidden text-center mt-20">
+
+  <!-- Lazy Loaded Background -->
+  <img src="your-image.jpg" loading="lazy" alt="Wedding Couple"
+       class="absolute inset-0 w-full h-full object-cover brightness-[0.45]">
+
+  <h1 class="text-white title-font text-5xl md:text-7xl tracking-widest relative z-10">
+    BLOG
+  </h1>
+
+</section>
+
+
+<!-- HERO SECTION -->
+<section class="relative w-full h-screen overflow-hidden">
+
+  <!-- Background Slides -->
+  <div id="heroSlider" class="absolute inset-0">
+    <div class="hero-bg absolute inset-0 opacity-100" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=60');"></div>
+    <div class="hero-bg absolute inset-0 opacity-0" style="background-image: url('https://images.unsplash.com/photo-1522673607200-cd4d1b1b07f0?auto=format&fit=crop&w=1400&q=60');"></div>
+    <div class="hero-bg absolute inset-0 opacity-0" style="background-image: url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1400&q=60');"></div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- TEXT CONTENT -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+    <p class="tracking-[.3em] text-sm md:text-base mb-3">THE WEDDING OF</p>
+    <h1 class="text-4xl md:text-7xl font-serif">ROBBIE & MAGIE</h1>
+    <div class="mt-6 text-2xl">❧ ❧ ❧</div>
+  </div>
+
+</section>
+
+<!-- SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+  <!-- Title -->
+  <h2 class="text-4xl md:text-6xl serif-title tracking-wide mb-4">OUR LOVE STORY</h2>
+
+  <!-- Divider Icon -->
+  <div class="text-gray-400 text-xl mb-6">❧❧❧</div>
+
+  <!-- Subtitle -->
+  <p class="max-w-2xl mx-auto text-gray-500 italic leading-relaxed mb-16">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean commodo ligula eget dolor.
+  </p>
+
+  <!-- Profiles Section -->
+  <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-10">
+
+    <!-- Groom -->
+    <div class="text-center space-y-3 px-4">
+      <div class="text-yellow-600 text-3xl">👤</div>
+      <h3 class="serif-title text-2xl tracking-widest">ROBBIE DARWIN</h3>
+      <p class="text-sm tracking-widest text-gray-500">26.02.1990</p>
+      <p class="italic text-gray-600 leading-relaxed">
+        Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.
+      </p>
+    </div>
+
+    <!-- Images with & circle overlay -->
+    <div class="relative flex justify-center items-center">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1603888078933-993567b8ca88?auto=format&fit=crop&w=800&q=60"
+           class="w-72 h-96 object-cover rounded shadow" alt="Groom">
+
+      <span class="absolute bg-white border border-gray-300 rounded-full px-5 py-4 serif-title text-3xl text-gray-700 shadow">
+        &
+      </span>
+
+      <img loading="lazy" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=60"
+           class="w-72 h-96 object-cover rounded shadow" alt="Bride">
+    </div>
+
+    <!-- Bride -->
+    <div class="text-center space-y-3 px-4">
+      <div class="text-yellow-600 text-3xl">👤</div>
+      <h3 class="serif-title text-2xl tracking-widest">MAGIE NIELSEN</h3>
+      <p class="text-sm tracking-widest text-gray-500">23.04.1994</p>
+      <p class="italic text-gray-600 leading-relaxed">
+        Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="text-center py-20 px-6">
+  
+  <!-- Heading -->
+  <h2 class="text-4xl md:text-6xl tracking-widest mb-4">
+    WE ARE GETTING MARRIED
+  </h2>
+
+  <!-- Divider -->
+  <div class="text-gray-400 mb-6">❧❧❧</div>
+
+  <p class="max-w-2xl mx-auto text-gray-500 italic mb-14">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean commodo ligula eget dolor.
+  </p>
+
+  <!-- Countdown -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+
+    <div class="border border-[#d8cfc7] bg-white/40 py-8">
+      <span id="days" class="text-4xl block mb-2">0</span>
+      <span class="text-xs tracking-widest text-gray-500">DAYS</span>
+    </div>
+
+    <div class="border border-[#d8cfc7] bg-white/40 py-8">
+      <span id="hours" class="text-4xl block mb-2">0</span>
+      <span class="text-xs tracking-widest text-gray-500">HOURS</span>
+    </div>
+
+    <div class="border border-[#d8cfc7] bg-white/40 py-8">
+      <span id="minutes" class="text-4xl block mb-2">0</span>
+      <span class="text-xs tracking-widest text-gray-500">MINUTES</span>
+    </div>
+
+    <div class="border border-[#d8cfc7] bg-white/40 py-8">
+      <span id="seconds" class="text-4xl block mb-2">0</span>
+      <span class="text-xs tracking-widest text-gray-500">SECONDS</span>
+    </div>
+
+  </div>
+
+  <p class="italic text-gray-500 mt-12">
+    Please confirm your attendance by clicking this button.
+  </p>
+
+  <!-- Button -->
+  <button class="mt-6 px-12 py-3 bg-[#A98150] text-white tracking-widest hover:bg-[#8a6a41] transition">
+    ATTEND
+  </button>
+
+</section>
+
+<!-- Optional decorative leaf images (lazy loaded) -->
+<img loading="lazy" src="https://i.ibb.co/ZJXhJ7T/leaf1.png" class="absolute bottom-0 left-0 w-32 opacity-40 pointer-events-none" alt="">
+<img loading="lazy" src="https://i.ibb.co/gMWfyb1/leaf2.png" class="absolute bottom-0 right-0 w-32 opacity-40 pointer-events-none" alt="">
+
+
+<section class="py-20 bg-white text-center">
+
+  <!-- Heading -->
+  <h2 class="text-4xl md:text-6xl tracking-[0.25em] mb-4">
+    CAPTURED MOMENTS
+  </h2>
+
+  <!-- Divider -->
+  <div class="text-gray-400 mb-6">❧❧❧</div>
+
+  <p class="max-w-2xl mx-auto text-gray-500 italic mb-16">
+    Aenean commodo ligula eget dolor.
+  </p>
+
+  <!-- Gallery -->
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
+
+      <!-- Image 1 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/YLxjJrM/photo1.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 1">
+
+      <!-- Image 2 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/Jt4bg6h/photo2.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 2">
+
+      <!-- Image 3 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/m8kdM3c/photo3.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 3">
+
+      <!-- Image 4 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/pRyQYqL/photo4.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 4">
+
+      <!-- Image 5 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/JFQrTcP/photo5.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 5">
+
+      <!-- Image 6 -->
+      <img loading="lazy"
+        src="https://i.ibb.co/q5JmWQd/photo6.jpg"
+        class="w-full rounded-lg hover:opacity-90 transition"
+        alt="Captured moment 6">
+
+    </div>
+  </div>
+
+</section>
+
+<section class="relative w-full py-32 text-center overflow-hidden">
+
+  <!-- Lazy Background Image -->
+  <div class="absolute inset-0">
+    <img loading="lazy"
+      src="https://i.ibb.co/2kJH2CM/rings-bg.jpg"
+      class="w-full h-full object-cover opacity-60"
+      alt="Wedding rings background">
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-5xl mx-auto px-6 text-white">
+    
+    <div class="text-6xl lg:text-7xl mb-8 font-serif italic">
+      &quot;
+    </div>
+
+    <p class="text-2xl md:text-3xl font-serif leading-relaxed mb-8">
+      Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+      deleniti atque corrupti quos dolores et quas molestias excepturi at vero eos et vitae
+      fugiat magna.
+    </p>
+
+    <p class="tracking-[0.3em] text-sm lg:text-base uppercase">
+      ANDREW DARWIN
+    </p>
+
+  </div>
+</section>
+
+<section class="w-full py-24 bg-white text-center">
+
+  <!-- Heading -->
+  <h2 class="text-4xl md:text-5xl font-serif tracking-[0.2em] text-gray-800">
+    WEDDING LOCATION
+  </h2>
+
+  <!-- Divider -->
+  <div class="flex justify-center my-4">
+    <span class="w-16 h-px bg-gray-400"></span>
+  </div>
+
+  <!-- Subtitle -->
+  <p class="max-w-3xl mx-auto text-gray-500 font-serif text-lg md:text-xl mb-12">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+    Aenean commodo ligula eget dolor.
+  </p>
+
+  <!-- Lazy Loaded Google Map -->
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="w-full h-[450px] rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.44630359822!2d115.24341667547967!3d-8.50739708736718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd223dfd646c277%3A0x225dcd5f01e6d0f2!2sFour%20Seasons%20Resort%20Bali%20At%20Sayan!5e0!3m2!1sen!2sid!4v1700000000000"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</section>
+
+<section class="w-full py-24 bg-white text-center">
+
+  <!-- Heading -->
+  <h2 class="text-4xl md:text-5xl font-serif tracking-[0.2em] text-gray-800">
+    WHERE TO STAY?
+  </h2>
+
+  <!-- Divider -->
+  <div class="flex justify-center my-4">
+    <span class="w-16 h-px bg-gray-400"></span>
+  </div>
+
+  <!-- Subtitle -->
+  <p class="max-w-3xl mx-auto text-gray-500 font-serif text-lg md:text-xl mb-16">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo.
+  </p>
+
+  <!-- Hotels Grid -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+    <!-- Hotel Card 1 -->
+    <div class="text-left">
+      <img src="https://i.ibb.co/8b7tQcs/hotel1.jpg" loading="lazy" class="w-full h-72 object-cover rounded-lg shadow-md" alt="Grand Hyatt Room">
+      <h3 class="text-2xl font-serif tracking-[0.1em] text-gray-800 mt-6">GRAND HYATT</h3>
+      <p class="text-gray-600 font-serif mt-2 leading-relaxed">
+        A small river named Duden flows by their place and supplies it with the necessary regelialia.
+      </p>
+      <p class="flex items-center gap-2 mt-4 text-gray-500 font-serif text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 20s6-5.686 6-10A6 6 0 1 0 4 10c0 4.314 6 10 6 10z"/></svg>
+        JL. NUSA DUA, BENOA, SOUTH KUTA
+      </p>
+    </div>
+
+    <!-- Hotel Card 2 -->
+    <div class="text-left">
+      <img src="https://i.ibb.co/1JZC4y2/hotel2.jpg" loading="lazy" class="w-full h-72 object-cover rounded-lg shadow-md" alt="Karma Kandara Room">
+      <h3 class="text-2xl font-serif tracking-[0.1em] text-gray-800 mt-6">KARMA KANDARA</h3>
+      <p class="text-gray-600 font-serif mt-2 leading-relaxed">
+        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </p>
+      <p class="flex items-center gap-2 mt-4 text-gray-500 font-serif text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 20s6-5.686 6-10A6 6 0 1 0 4 10c0 4.314 6 10 6 10z"/></svg>
+        JL. NUSA DUA, BENOA, SOUTH KUTA
+      </p>
+    </div>
+
+    <!-- Hotel Card 3 -->
+    <div class="text-left">
+      <img src="https://i.ibb.co/rFhPSbC/hotel3.jpg" loading="lazy" class="w-full h-72 object-cover rounded-lg shadow-md" alt="Lakeview Villa Room">
+      <h3 class="text-2xl font-serif tracking-[0.1em] text-gray-800 mt-6">LAKEVIEW VILLA</h3>
+      <p class="text-gray-600 font-serif mt-2 leading-relaxed">
+        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </p>
+      <p class="flex items-center gap-2 mt-4 text-gray-500 font-serif text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 20s6-5.686 6-10A6 6 0 1 0 4 10c0 4.314 6 10 6 10z"/></svg>
+        JL. NUSA DUA, BENOA, SOUTH KUTA
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="w-full py-24 bg-[url('https://i.ibb.co/0qDg0m0/bg-leaf.jpg')] bg-cover bg-center bg-no-repeat">
+  <div class="max-w-3xl mx-auto bg-white/80 shadow-xl rounded-lg py-16 px-10 text-center backdrop-blur">
+
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-serif tracking-[0.2em] text-gray-800">YOU ARE INVITED</h2>
+
+    <!-- Divider -->
+    <div class="flex justify-center my-4">
+      <span class="w-16 h-px bg-gray-400"></span>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="text-gray-600 font-serif text-lg md:text-xl mb-12">
+      We can’t wait to celebrate our special day with you.
+    </p>
+
+    <!-- Form -->
+    <form class="space-y-6" onsubmit="submitRSVP(event)">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="YOUR NAME"
+          class="border border-gray-300 px-4 py-3 w-full rounded focus:ring-gray-400 focus:border-gray-400 font-serif" required>
+
+        <input type="email" placeholder="YOUR EMAIL"
+          class="border border-gray-300 px-4 py-3 w-full rounded focus:ring-gray-400 focus:border-gray-400 font-serif" required>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <select class="border border-gray-300 px-4 py-3 w-full rounded font-serif cursor-pointer">
+          <option value="" disabled selected>SELECT GUESTS</option>
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3 People</option>
+          <option>4+ People</option>
+        </select>
+
+        <select class="border border-gray-300 px-4 py-3 w-full rounded font-serif cursor-pointer">
+          <option value="" disabled selected>CONFIRM</option>
+          <option>Yes, I will attend</option>
+          <option>No, I cannot attend</option>
+        </select>
+      </div>
+
+      <textarea placeholder="SOMETHING YOU SAY"
+        class="border border-gray-300 px-4 py-3 w-full h-32 rounded focus:ring-gray-400 focus:border-gray-400 font-serif"></textarea>
+
+      <button type="submit"
+        class="w-full py-4 text-lg tracking-widest font-serif bg-[#B58A58] text-white rounded hover:bg-[#9d784c] transition">
+        ATTEND
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- OUR GALLERY SECTION -->
+<section class="w-full py-32 bg-[#f4efeb]">
+  <div class="max-w-5xl mx-auto text-center px-4">
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-6xl font-serif tracking-[0.20em] text-gray-700">
+      OUR GALLERY
+    </h1>
+
+    <!-- Decorative Divider -->
+    <div class="flex justify-center my-4">
+      <span class="w-16 h-px bg-gray-400"></span>
+    </div>
+
+    <!-- Subtitle -->
+    <p class="text-gray-500 font-serif text-lg italic">
+      We spent sometimes to the day we met.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY WRAPPER -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Masonry Grid -->
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+
+      <!-- Image 1 -->
+      <img src="your-image-1.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 2 -->
+      <img src="your-image-2.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 3 -->
+      <img src="your-image-3.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 4 -->
+      <img src="your-image-4.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 5 -->
+      <img src="your-image-5.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 6 -->
+      <img src="your-image-6.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+      <!-- Image 7 -->
+      <img src="your-image-7.jpg" loading="lazy" alt="Gallery Image"
+        class="w-full rounded-lg transition-transform duration-300 hover:scale-[1.03]">
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#F5F0EC] py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT TEXT BLOCK -->
+    <div>
+      <h2 class="text-6xl md:text-7xl font-serif tracking-wide text-gray-800 leading-none mb-8">
+        OUR <br> STORY
+      </h2>
+
+      <p class="text-lg italic text-gray-600 leading-relaxed mb-6">
+        You loved the way I watch the sun through my finger.
+      </p>
+      <p class="text-lg italic text-gray-600 leading-relaxed">
+        We spent sometimes to the day we met.
+      </p>
+
+      <!-- Bottom Image (under text) -->
+      <div class="mt-12">
+        <img src="your-image-2.jpg" loading="lazy" alt="Story Image"
+          class="rounded-lg shadow-md w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.02]">
+      </div>
+    </div>
+
+    <!-- RIGHT LARGE IMAGE -->
+    <div>
+      <img src="your-image-1.jpg" loading="lazy" alt="Couple Image"
+        class="rounded-lg shadow-md w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.02]">
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- Top Poetic Line -->
+    <p class="text-center text-3xl md:text-4xl lg:text-5xl font-serif italic text-gray-600 max-w-4xl mx-auto leading-relaxed mb-24">
+      We drove under the heavy rain soaking wet yes. We laughed at it yet, so tell me more about your constellation arm.
+    </p>
+
+    <!-- TWO COLUMN STORY BLOCK -->
+    <div class="grid md:grid-cols-2 gap-16 mb-24">
+
+      <!-- LEFT COLUMN -->
+      <div>
+        <h3 class="uppercase tracking-widest text-sm text-gray-400 mb-4">
+          The Story Begins
+        </h3>
+        <p class="italic text-lg text-gray-600 leading-relaxed">
+          And we danced in the room. Grew our heart a bloom. I stop right there! 
+          You’ve found a new home. I should be happy...
+        </p>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+        <h3 class="uppercase tracking-widest text-sm text-gray-400 mb-2">
+          The Proposal
+        </h3>
+        <h2 class="text-3xl font-serif tracking-wide text-gray-800 mb-6">
+          She Said Yes
+        </h2>
+        <p class="italic text-lg text-gray-600 leading-relaxed">
+          A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring 
+          which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, 
+          which was created...
+        </p>
+      </div>
+
+    </div>
+
+    <!-- IMAGE ROW -->
+    <div class="grid md:grid-cols-2 gap-10">
+      <img src="your-image-1.jpg" loading="lazy" alt="Engagement Photo"
+        class="w-full h-auto rounded-lg object-cover shadow-md transition-transform duration-300 hover:scale-[1.02]">
+
+      <img src="your-image-2.jpg" loading="lazy" alt="Couple Smiling"
+        class="w-full h-auto rounded-lg object-cover shadow-md transition-transform duration-300 hover:scale-[1.02]">
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="grid lg:grid-cols-3 gap-10 items-start">
+
+      <!-- LEFT IMAGE -->
+      <div class="space-y-10 lg:col-span-2 grid grid-cols-2 gap-6">
+        <img 
+          src="https://via.placeholder.com/600x800" 
+          loading="lazy" 
+          alt="Bride portrait"
+          class="w-full h-auto object-cover rounded-md shadow-sm"
+        >
+
+        <img 
+          src="https://via.placeholder.com/600x800" 
+          loading="lazy" 
+          alt="Groom portrait"
+          class="w-full h-auto object-cover rounded-md shadow-sm"
+        >
+      </div>
+
+      <!-- RIGHT TEXT CONTENT -->
+      <div class="lg:pl-12">
+        <h2 class="text-3xl font-serif tracking-wide text-gray-800 mb-6">
+          ENGAGEMENT
+        </h2>
+
+        <p class="italic text-gray-600 leading-relaxed mb-6">
+          A wonderful serenity has taken possession of my entire soul, like these 
+          sweet mornings of spring which I enjoy with my whole heart. I am alone, 
+          and feel the charm of existence in this spot, which was created.
+        </p>
+
+        <p class="italic text-gray-600 leading-relaxed">
+          I am so happy, my dear friend, so absorbed in the exquisite sense of mere 
+          tranquil existence, that I neglect my talents.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="py-24 bg-[#f4efeb]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Quote Icon -->
+    <div class="text-6xl text-[#d1c3a4] mb-6">
+      &ldquo;&rdquo;
+    </div>
+
+    <!-- Quote Text -->
+    <p class="text-2xl md:text-3xl font-serif italic text-gray-600 leading-relaxed max-w-4xl mx-auto">
+      Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
+      voluptatum deleniti atque corrupti quos dolores et quas molestias 
+      excepturi at vero eos et vitae feugiat magna
+    </p>
+
+    <!-- Author -->
+    <p class="mt-10 tracking-[0.35em] text-sm text-[#c6a66d] font-medium">
+      ANDREW DARWIN
+    </p>
+
+  </div>
+</section>
+
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+    <!-- Left Large Image -->
+    <div>
+      <img 
+        src="your-large-image.jpg" 
+        loading="lazy" 
+        alt="Couple walking in field" 
+        class="w-full h-auto object-cover shadow-lg"
+      >
+    </div>
+
+    <!-- Right Text + Small Image -->
+    <div class="flex flex-col space-y-8">
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl tracking-widest text-gray-900 font-serif">
+        IT IS OUR DESTINY...
+      </h2>
+
+      <!-- Paragraph -->
+      <p class="text-xl font-serif italic text-gray-600 leading-relaxed">
+        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created.
+      </p>
+
+      <p class="text-xl font-serif italic text-gray-600 leading-relaxed">
+        I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+      </p>
+
+      <!-- Small Image -->
+      <div>
+        <img 
+          src="your-small-image.jpg" 
+          loading="lazy" 
+          alt="Couple running in field" 
+          class="w-full h-auto object-cover shadow-md"
+        >
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="relative w-full py-28 flex items-center justify-center text-center overflow-hidden">
+
+  <!-- Background Image -->
+  <img 
+    src="your-background-image.jpg" 
+    loading="lazy" 
+    alt="Wedding Rings" 
+    class="absolute inset-0 w-full h-full object-cover brightness-50"
+  />
+
+  <!-- Content -->
+  <div class="relative z-10 text-white px-6">
+    <h2 class="text-3xl md:text-5xl font-serif tracking-widest mb-4">
+      WE CAN’T WAIT TO SEE YOU!
+    </h2>
+
+    <p class="text-lg md:text-xl italic mb-8">
+      Please let us know if you’ll be able to make it.
+    </p>
+
+    <!-- RSVP Button -->
+    <a href="#rsvp"
+       class="inline-block bg-yellow-700 hover:bg-yellow-800 transition px-8 py-3 text-white font-semibold tracking-wide rounded">
+      RSVP
+    </a>
+  </div>
+
+</section>
+
+<!-- Social Links -->
+<div class="w-full py-10 bg-white">
+  <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-10 text-gray-600 text-sm tracking-widest">
+
+    <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition">
+      <i class="fab fa-facebook"></i> FACEBOOK
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition">
+      <i class="fab fa-x-twitter"></i> (X) TWITTER
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition">
+      <i class="fab fa-instagram"></i> INSTAGRAM
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition">
+      <i class="fab fa-pinterest"></i> PINTEREST
+    </a>
+
+  </div>
+</div>
+
+
+<section class="max-w-7xl mx-auto px-6 py-20">
+
+  <!-- Blog Grid -->
+  <div id="blogGrid" class="grid grid-cols-1 md:grid-cols-3 gap-16">
+
+    <!-- Card 1 -->
+    <div class="text-center md:text-left">
+      <img src="your-image-1.jpg" loading="lazy" alt="Wedding Flowers"
+           class="w-full h-[330px] object-cover mb-6">
+
+      <h3 class="title-font text-2xl tracking-wide uppercase mb-3">
+        How We Decide Our Wedding Location
+      </h3>
+
+      <p class="text-sm tracking-wider text-gray-500 mb-4">
+        April 7, 2025
+      </p>
+
+      <p class="text-gray-600 leading-relaxed italic">
+        It showed a lady fitted out with a fur hat and fur boa who sat upright,
+        raising a heavy fur muff that...
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="text-center md:text-left">
+      <img src="your-image-2.jpg" loading="lazy" alt="Bridal Bouquet"
+           class="w-full h-[330px] object-cover mb-6">
+
+      <h3 class="title-font text-2xl tracking-wide uppercase mb-3">
+        Top Bridal Bouquets You’ll Fall in Love With
+      </h3>
+
+      <p class="text-sm tracking-wider text-gray-500 mb-4">
+        April 7, 2025
+      </p>
+
+      <p class="text-gray-600 leading-relaxed italic">
+        It showed a lady fitted out with a fur hat and fur boa who sat upright,
+        raising a heavy fur muff that...
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="text-center md:text-left">
+      <img src="your-image-3.jpg" loading="lazy" alt="Wedding Group"
+           class="w-full h-[330px] object-cover mb-6">
+
+      <h3 class="title-font text-2xl tracking-wide uppercase mb-3">
+        How to Find the Perfect Wedding Dress
+      </h3>
+
+      <p class="text-sm tracking-wider text-gray-500 mb-4">
+        April 7, 2025
+      </p>
+
+      <p class="text-gray-600 leading-relaxed italic">
+        It showed a lady fitted out with a fur hat and fur boa who sat upright,
+        raising a heavy fur muff that...
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Load More Button -->
+  <div class="text-center mt-16">
+    <button id="loadMoreBtn"
+            class="px-12 py-4 bg-[#b59a6a] hover:bg-[#8b744e] transition text-white tracking-widest uppercase text-sm">
+      Load More
+    </button>
+  </div>
+
+</section>
+
+
+<section class="relative py-24 bg-[#faf7f4]">
+
+  <!-- Background Leaves (Lazy Loaded) -->
+  <img src="leaf-left.png" loading="lazy" class="hidden md:block absolute top-0 left-0 h-full opacity-30 object-contain pointer-events-none" alt="">
+  <img src="leaf-right.png" loading="lazy" class="hidden md:block absolute top-0 right-0 h-full opacity-30 object-contain pointer-events-none" alt="">
+
+  <div class="max-w-4xl mx-auto px-6 relative">
+
+    <!-- Title -->
+    <h2 class="text-center text-4xl tracking-[0.15em] font-[Cormorant_Garamond] text-gray-700">
+      GET IN TOUCH
+    </h2>
+
+    <!-- Divider -->
+    <div class="w-32 mx-auto my-4 border-t border-gray-300"></div>
+
+    <!-- Subtitle -->
+    <p class="text-center text-lg italic text-gray-500 mb-12">
+      We can’t wait to celebrate our special day with you.
+    </p>
+
+    <!-- Form -->
+    <form class="space-y-6">
+      
+      <!-- Row 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="YOUR NAME" class="border border-gray-300 w-full py-3 px-4 focus:outline-none focus:border-gray-500 tracking-wide">
+        <input type="email" placeholder="YOUR EMAIL" class="border border-gray-300 w-full py-3 px-4 focus:outline-none focus:border-gray-500 tracking-wide">
+      </div>
+
+      <!-- Subject -->
+      <input type="text" placeholder="SUBJECT" class="border border-gray-300 w-full py-3 px-4 focus:outline-none focus:border-gray-500 tracking-wide">
+
+      <!-- Message -->
+      <textarea placeholder="SOMETHING YOU SAY" rows="5" class="border border-gray-300 w-full py-3 px-4 focus:outline-none focus:border-gray-500 tracking-wide"></textarea>
+
+      <!-- Button -->
+      <button type="submit"
+        class="w-full bg-[#a98253] hover:bg-[#8a6b46] text-white tracking-[0.25em] py-4 transition uppercase">
+        Attend
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+
+<section class="w-full bg-[#f4ede8] py-16">
+  <!-- Social usernames -->
+  <p class="text-center tracking-[0.35em] text-[#a98253] text-sm mb-10 uppercase">
+    @ROBBIE_DRWN & @MAGIE_NIELSEN
+  </p>
+
+  <!-- Map Container -->
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="relative w-full h-[450px] overflow-hidden rounded-lg shadow-md">
+      <iframe
+        loading="lazy"
+        class="w-full h-full border-0"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.542497535221!2d115.2535080750111!3d-8.518667386075263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21dad47a83b17%3A0xceda392b745d19b3!2sFour%20Seasons%20Resort%20Bali%20At%20Sayan!5e0!3m2!1sen!2sid!4v170889999999"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+
+  <!-- Background Image (Lazy Loaded) -->
+  <img 
+    src="your-image.jpg" 
+    loading="lazy" 
+    class="absolute inset-0 w-full h-full object-cover object-center scale-105 blur-sm transition-[filter] duration-[1200ms] ease-out" 
+    onload="this.classList.remove('blur-sm')" 
+    alt="Wedding Rings Background">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Title -->
+  <h1 class="relative text-white text-5xl md:text-6xl tracking-widest font-light uppercase">
+    RSVP
+  </h1>
+
+</section>
+
+<header class="fixed top-0 w-full z-50 bg-transparent text-white px-10 py-5 flex justify-between items-center">
+  
+  <h2 class="text-2xl font-[cursive] tracking-wide">Robbie & Mag</h2>
+
+  <nav class="hidden md:flex gap-10 text-sm tracking-wide">
+    <a href="#" class="hover:text-[#d8c5a4] transition">HOME</a>
+
+    <div class="relative group cursor-pointer">
+      <span class="hover:text-[#d8c5a4] transition">PAGES</span>
+      <span class="ml-1">▾</span>
+      <!-- submenu -->
+      <ul class="absolute hidden group-hover:block bg-white text-gray-700 mt-2 border shadow-md p-3 rounded-md text-xs">
+        <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Wedding Party</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Venue</a></li>
+      </ul>
+    </div>
+
+    <a href="#" class="hover:text-[#d8c5a4] transition">OUR STORY</a>
+    <a href="#" class="hover:text-[#d8c5a4] transition">BLOG</a>
+
+    <div class="relative group cursor-pointer">
+      <span class="hover:text-[#d8c5a4] transition">CONTACT</span>
+      <span class="ml-1">▾</span>
+      <!-- submenu -->
+      <ul class="absolute hidden group-hover:block bg-white text-gray-700 mt-2 border shadow-md p-3 rounded-md text-xs">
+        <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Contact Form</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="#" class="border border-white px-5 py-2 uppercase tracking-wide text-sm hover:bg-white hover:text-gray-900 transition">
+    RSVP
+  </a>
+
+</header>
+
+
+<!-- RSVP SECTION -->
+<section class="py-24 bg-white text-center">
+
+  <!-- Title -->
+  <h2 class="text-4xl md:text-5xl tracking-[0.2em] text-gray-700 font-light uppercase">
+    You Are Invited
+  </h2>
+
+  <!-- Decorative Divider -->
+  <div class="flex justify-center my-4">
+    <div class="w-24 border-t border-gray-300"></div>
+  </div>
+
+  <!-- Subtitle -->
+  <p class="text-lg text-gray-500 italic mb-12">
+    We can’t wait to celebrate our special day with you.
+  </p>
+
+  <!-- Form Container -->
+  <form class="max-w-4xl mx-auto space-y-6">
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Name -->
+      <input 
+        type="text" 
+        placeholder="YOUR NAME" 
+        loading="lazy"
+        class="w-full border border-[#c8b59e] px-4 py-3 uppercase text-sm tracking-wide focus:outline-none focus:border-gray-600"
+      />
+
+      <!-- Email -->
+      <input 
+        type="email" 
+        placeholder="YOUR EMAIL"
+        loading="lazy"
+        class="w-full border border-[#c8b59e] px-4 py-3 uppercase text-sm tracking-wide focus:outline-none focus:border-gray-600"
+      />
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Guest Select -->
+      <select 
+        loading="lazy"
+        class="w-full border border-[#c8b59e] bg-white px-4 py-3 uppercase text-sm tracking-wide focus:outline-none focus:border-gray-600">
+        <option selected disabled>SELECT GUESTS</option>
+        <option>Just Me</option>
+        <option>+1 Guest</option>
+        <option>+2 Guests</option>
+      </select>
+
+      <!-- Confirm Attendance -->
+      <select 
+        loading="lazy"
+        class="w-full border border-[#c8b59e] bg-white px-4 py-3 uppercase text-sm tracking-wide focus:outline-none focus:border-gray-600">
+        <option selected disabled>CONFIRM</option>
+        <option>Attending</option>
+        <option>Not Attending</option>
+      </select>
+
+    </div>
+
+    <!-- Message -->
+    <textarea 
+      placeholder="SOMETHING YOU SAY"
+      loading="lazy"
+      class="w-full border border-[#c8b59e] px-4 py-3 uppercase text-sm tracking-wide h-32 focus:outline-none focus:border-gray-600"></textarea>
+
+    <!-- Submit Button -->
+    <button 
+      type="submit"
+      class="w-full bg-[#a98254] hover:bg-[#917447] text-white uppercase tracking-widest py-4 transition">
+      Attend
+    </button>
+
+  </form>
+</section>
+
+
+<!-- CONTACT / DETAILS SECTION -->
+<section class="bg-[#f6f2ee] py-16 md:py-24">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left px-6">
+
+    <!-- CONTACT INFO -->
+    <div>
+      <h3 class="text-xl tracking-[0.2em] uppercase text-gray-700 font-light mb-6">
+        Contact Info
+      </h3>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/phone.svg" loading="lazy" class="w-5 opacity-70" />
+        +1-202-555-0191
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/envelope.svg" loading="lazy" class="w-5 opacity-70" />
+        carolina@gmail.com
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/map-pin.svg" loading="lazy" class="w-5 opacity-70" />
+        11 AM Hotel Seraton, London
+      </p>
+    </div>
+
+    <!-- WEDDING CEREMONY -->
+    <div>
+      <h3 class="text-xl tracking-[0.2em] uppercase text-gray-700 font-light mb-6">
+        Wedding Ceremony
+      </h3>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/calendar.svg" loading="lazy" class="w-5 opacity-70" />
+        Saturday, 20 August 2025
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/clock.svg" loading="lazy" class="w-5 opacity-70" />
+        09.30 AM – 12.00 PM
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/map-pin.svg" loading="lazy" class="w-5 opacity-70" />
+        11 AM Hotel Seraton, London
+      </p>
+    </div>
+
+    <!-- RECEPTION -->
+    <div>
+      <h3 class="text-xl tracking-[0.2em] uppercase text-gray-700 font-light mb-6">
+        Wedding Reception
+      </h3>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/calendar.svg" loading="lazy" class="w-5 opacity-70" />
+        Saturday, 20 August 2025
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600 mb-3">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/clock.svg" loading="lazy" class="w-5 opacity-70" />
+        12.30 PM – 4.00 PM
+      </p>
+
+      <p class="flex items-center gap-3 text-gray-600">
+        <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/map-pin.svg" loading="lazy" class="w-5 opacity-70" />
+        11 AM Hotel Seraton, London
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="py-10 text-center flex justify-center gap-12 text-gray-500 tracking-wider text-sm">
+
+  <a href="#" class="flex items-center gap-2 hover:opacity-60 transition">
+    <i class="fab fa-facebook-f"></i> FACEBOOK
+  </a>
+
+  <a href="#" class="flex items-center gap-2 hover:opacity-60 transition">
+    <i class="fab fa-x-twitter"></i> (X) TWITTER
+  </a>
+
+  <a href="#" class="flex items-center gap-2 hover:opacity-60 transition">
+    <i class="fab fa-instagram"></i> INSTAGRAM
+  </a>
+
+  <a href="#" class="flex items-center gap-2 hover:opacity-60 transition">
+    <i class="fab fa-pinterest"></i> PINTEREST
+  </a>
+
+</div>
+
+<!-- FontAwesome icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" defer></script>
+
+
+
+<footer class="w-full bg-white pt-12 pb-8 text-center">
+
+  <!-- Social Links -->
+  <div class="flex justify-center gap-12 text-gray-500 text-sm tracking-wide mb-8">
+
+    <a href="#" class="flex items-center gap-2 hover:text-[#a98253] transition">
+      <!-- Facebook Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" loading="lazy">
+        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 0 1 3.7-3.8c1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.6v7A10 10 0 0 0 22 12Z"/>
+      </svg>
+      FACEBOOK
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-[#a98253] transition">
+      <!-- X Twitter Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" loading="lazy">
+        <path d="M4.5 4l6.3 8.4L4.6 20h2.2l5.4-6.5 4.6 6.5H20l-6.7-9 5.9-7H17l-4.9 5.9L7.8 4H4.5Z"/>
+      </svg>
+      (X) TWITTER
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-[#a98253] transition">
+      <!-- Instagram Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" loading="lazy">
+        <path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zm4.8-3.8a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+      </svg>
+      INSTAGRAM
+    </a>
+
+    <a href="#" class="flex items-center gap-2 hover:text-[#a98253] transition">
+      <!-- Pinterest Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" loading="lazy">
+        <path d="M12 2a10 10 0 0 0-3.5 19.4c-.1-.9-.2-2.3 0-3.3.2-.8 1.4-5.3 1.4-5.3a3.5 3.5 0 0 1-.3-1.4c0-1.3.8-2.2 1.7-2.2.8 0 1.2.6 1.2 1.3 0 .8-.5 1.9-.7 3-.2 1 .6 1.8 1.6 1.8 2 0 3.4-2.1 3.4-5 0-2.6-1.9-4.4-4.7-4.4a5 5 0 0 0-5.2 5c0 .9.2 1.6.6 2.2l.4-1.6a.4.4 0 0 0-.1-.4c-.5-.6-.7-1.3-.7-2.1 0-2.9 2.2-5.5 6.3-5.5 3.4 0 6 2.4 6 5.6 0 3.4-2.1 6.1-5 6.1-1 0-1.9-.5-2.1-1.1l-.6 2.4c-.2.9-.8 2-1.1 2.6A10 10 0 0 0 12 2z"/>
+      </svg>
+      PINTEREST
+    </a>
+
+  </div>
+
+  <hr class="w-3/4 mx-auto border-gray-200 mb-10"/>
+
+  <!-- Signature / Logo -->
+  <h2 class="font-[cursive] text-3xl text-gray-700 mb-6">
+    Robbie & Magie
+  </h2>
+
+  <!-- Navigation -->
+  <nav class="flex justify-center gap-10 text-[#a98253] text-sm tracking-widest mb-8">
+    <a href="#" class="hover:text-gray-800 transition">HOME</a>
+    <a href="#" class="hover:text-gray-800 transition">OUR STORY</a>
+    <a href="#" class="hover:text-gray-800 transition">GALLERY</a>
+    <a href="#" class="hover:text-gray-800 transition">RSVP</a>
+  </nav>
+
+  <!-- Copyright -->
+  <p class="text-xs text-gray-500 tracking-wide">
+    © 2025. ALL RIGHT RESERVED. POWERED BY GUTENVERSE BLOCKS ADDONS.
+  </p>
+
+</footer>
+
+
+
+
+<!-- Flowbite JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const section = document.querySelector("section");
+    section.style.opacity = 0;
+    section.style.transition = "opacity 1.5s ease-in-out";
+
+    setTimeout(() => {
+      section.style.opacity = 1;
+    }, 200);
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const formSection = document.querySelector("section");
+  formSection.style.opacity = 0;
+  formSection.style.transition = "opacity 1.5s ease-out";
+  setTimeout(() => formSection.style.opacity = 1, 200);
+});
+</script>
+
+
+<script>
+const blogGrid = document.getElementById("blogGrid");
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+loadMoreBtn.addEventListener("click", () => {
+  const newPost = `
+    <div class="text-center md:text-left">
+      <img src="your-image-4.jpg" loading="lazy" class="w-full h-[330px] object-cover mb-6">
+      <h3 class="title-font text-2xl tracking-wide uppercase mb-3">Another Wedding Blog Title</h3>
+      <p class="text-sm tracking-wider text-gray-500 mb-4">April 8, 2025</p>
+      <p class="text-gray-600 leading-relaxed italic">More blog content preview text...</p>
+    </div>`;
+
+  blogGrid.insertAdjacentHTML("beforeend", newPost);
+});
+</script>
+
+
+<script>
+/* Auto Background Slider */
+const slides = document.querySelectorAll('#heroSlider .hero-bg');
+let current = 0;
+
+function changeSlide() {
+  slides[current].style.opacity = 0;
+  current = (current + 1) % slides.length;
+  slides[current].style.opacity = 1;
+}
+
+setInterval(changeSlide, 5000); // change every 5 seconds
+</script>
+<!-- JavaScript Countdown -->
+<script>
+  const weddingDate = new Date("2025-02-14T00:00:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = weddingDate - now;
+
+    document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    document.getElementById("minutes").innerText = Math.floor((diff / (1000 * 60)) % 60);
+    document.getElementById("seconds").innerText = Math.floor((diff / 1000) % 60);
+
+  }, 1000);
+</script>
+
+<script>
+function submitRSVP(event) {
+  event.preventDefault();
+  alert("🎉 Thank you! Your RSVP has been submitted.");
+}
+</script>
+
+</body>
+</html>

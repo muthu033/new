@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avani Style Home</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <style>
+    /* Create half-rounded left image effect */
+    .half-rounded-left {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- 🔹 Top Black Header -->
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="flex items-center space-x-2">
+        <h1 class="text-2xl font-bold tracking-wide">
+          <span class="text-red-600">A</span>VANI
+        </h1>
+      </div>
+
+      <div class="flex items-center space-x-6 text-sm">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>💛</span>
+          <span>Reorder</span>
+          <span class="font-medium">My Items</span>
+        </div>
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>👤</span>
+          <span>My Account</span>
+        </div>
+        <div class="relative cursor-pointer">
+          <span>🛒</span>
+          <span class="absolute -top-2 -right-2 text-xs bg-red-600 rounded-full px-1">0</span>
+        </div>
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <img src="https://flagcdn.com/w20/gb.png" alt="flag" class="w-5 h-4" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🔹 Yellow Navbar -->
+  <nav class="bg-yellow-400">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-3">
+      <ul class="flex flex-wrap items-center space-x-4 text-sm font-medium">
+        <li class="relative">
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center">
+            Avani Deals
+            <svg class="w-2.5 h-2.5 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 1 5 5 1 1" />
+            </svg>
+          </button>
+          <div id="dropdownNavbar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLink">
+              <li><a href="/card.html" class="block px-4 py-2 hover:bg-gray-100">Deals</a></li>
+              <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Coupons</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/login.html" class="hover:underline">Business Opportunity</a></li>
+        <li><a href="/mycart.html" class="hover:underline">About Avani</a></li>
+        <li><a href="/wishlist.html" class="hover:underline">Kids</a></li>
+        <li><a href="/sam.html" class="hover:underline">Pet Supplies</a></li>
+        <li><a href="#" class="hover:underline">Electronics</a></li>
+        <li><a href="#" class="hover:underline">Makeup</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Avani Store</a></li>
+        <li><a href="#" class="hover:underline">More Categories</a></li>
+        <li><a href="#" class="hover:underline">Bargain Hunting</a></li>
+      </ul>
+
+      <button
+        class="text-black border-2 border-black rounded-full px-5 py-1 font-semibold hover:bg-black hover:text-yellow-400 transition">
+        Join Now
+      </button>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 px-6 py-8">
+    <!-- Left Card -->
+    <div class="bg-gray-100 rounded-xl flex flex-col justify-center items-start p-6 text-left">
+      <h3 class="text-lg font-semibold">Kids & Toys</h3>
+      <p class="text-sm text-gray-600 mb-3">Shop Now</p>
+      <img src="https://cdn.pixabay.com/photo/2017/01/09/21/54/boy-1968719_1280.jpg" class="rounded-lg" alt="" />
+    </div>
+
+    <!-- Center Carousel -->
+    <div class="md:col-span-2">
+      <div id="default-carousel" class="relative w-full">
+        <!-- Carousel wrapper -->
+        <div class="relative h-64 overflow-hidden rounded-lg md:h-80">
+          <div class="hidden duration-700 ease-in-out">
+            <img src="https://images.unsplash.com/photo-1616469829581-1e0c72b88cd9"
+              class="absolute block w-full h-full object-cover" alt="..." />
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
+              <h2 class="text-2xl font-bold mb-2">Brand Deals</h2>
+              <p class="text-sm mb-4">Best offers for your favorite brands</p>
+              <button class="border px-4 py-1 rounded-full">Click Here</button>
+            </div>
+          </div>
+          <div class="hidden duration-700 ease-in-out">
+            <img src="https://images.unsplash.com/photo-1618354691370-cba6f7b8fd56"
+              class="absolute block w-full h-full object-cover" alt="..." />
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
+              <h2 class="text-2xl font-bold mb-2">Exclusive Offers</h2>
+              <p class="text-sm mb-4">Shop trending styles</p>
+              <button class="border px-4 py-1 rounded-full">Click Here</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
+            ❮
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
+            ❯
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Cards -->
+    <div class="flex flex-col space-y-4">
+      <div class="bg-gray-100 p-6 rounded-xl">
+        <h3 class="text-lg font-semibold">No Mess Less Stress</h3>
+        <p class="text-sm text-gray-600 mb-3">Shop Now</p>
+        <img src="https://images.unsplash.com/photo-1618354691370-cba6f7b8fd56" class="rounded-lg" alt="" />
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl">
+        <h3 class="text-lg font-semibold">Pet Healthy Food Accessories</h3>
+        <p class="text-sm text-gray-600 mb-3">Shop Now</p>
+        <img src="https://images.unsplash.com/photo-1612950289286-84b1c8e2b9a3" class="rounded-lg" alt="" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 🔹 Flash Deals Section -->
+  <!-- 🔹 Flash Deals Section -->
+  <!-- 🔹 Flash Deals Section -->
+  <section class="max-w-7xl mx-auto px-6 py-10">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-gray-900">Flash Deals</h2>
+      <button class="border border-black text-black px-4 py-1 rounded-full hover:bg-black hover:text-white transition">
+        View All
+      </button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Product Card 1 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition relative group overflow-hidden">
+        <div class="relative">
+          <img src="https://avani.biz/wp-content/uploads/2024/05/Joint-Support-Gummies.jpg" alt="Joint Support Gummies"
+            class="w-full h-64 object-contain p-4" />
+          <!-- Hover Icons -->
+          <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition">
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="View Product">
+              👁️
+            </button>
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="Add to Cart">
+              🛒
+            </button>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <p class="text-sm text-gray-500">Avani Store</p>
+          <h3 class="text-base font-semibold text-gray-900 hover:underline cursor-pointer">
+            Joint Support Gummies (Adult)
+          </h3>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition relative group overflow-hidden">
+        <div class="relative">
+          <img src="https://avani.biz/wp-content/uploads/2024/05/Multivitamin-Bear-Gummies.jpg"
+            alt="Multivitamin Gummies" class="w-full h-64 object-contain p-4" />
+          <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition">
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="View Product">
+              👁️
+            </button>
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="Add to Cart">
+              🛒
+            </button>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <p class="text-sm text-gray-500">Avani Store</p>
+          <h3 class="text-base font-semibold text-gray-900 hover:underline cursor-pointer">
+            Multivitamin Bear Gummies (Adult)
+          </h3>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition relative group overflow-hidden">
+        <div class="relative">
+          <img src="https://avani.biz/wp-content/uploads/2024/05/Sleep-Well-Gummies.jpg" alt="Sleep Well Gummies"
+            class="w-full h-64 object-contain p-4" />
+          <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition">
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="View Product">
+              👁️
+            </button>
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="Add to Cart">
+              🛒
+            </button>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <p class="text-sm text-gray-500">Avani Store</p>
+          <h3 class="text-base font-semibold text-gray-900 hover:underline cursor-pointer">
+            Sleep Well Gummies (Adult)
+          </h3>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition relative group overflow-hidden">
+        <div class="relative">
+          <img src="https://avani.biz/wp-content/uploads/2024/05/Bee-Bread-Powder.jpg" alt="Bee Bread Powder"
+            class="w-full h-64 object-contain p-4" />
+          <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition">
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="View Product">
+              👁️
+            </button>
+            <button class="bg-white p-2 rounded-full shadow hover:bg-gray-100" title="Add to Cart">
+              🛒
+            </button>
+          </div>
+        </div>
+        <div class="p-4 text-center">
+          <p class="text-sm text-gray-500">Avani Store</p>
+          <h3 class="text-base font-semibold text-gray-900 hover:underline cursor-pointer">
+            Bee Bread Powder
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Title -->
+    <h1 class="text-center text-3xl md:text-4xl font-bold text-gray-900 mb-6 uppercase">
+      AVANI COMPENSATION PLAN
+    </h1>
+
+    <!-- Description -->
+    <div class="text-center mb-8 space-y-2">
+      <p class="text-gray-700 font-medium">
+        Membership levels : <strong>1) Basic $9.99/month</strong> (Free for
+        now)
+      </p>
+      <p class="text-gray-700">
+        <strong>Ambassador:</strong> To purchase a minimum package to qualify
+        for receiving compensations.
+      </p>
+      <p class="text-gray-700">
+        <strong>Package 1:</strong> Graphene Waist Belt — <strong>$99</strong>
+        &nbsp; | &nbsp; <strong>PV:</strong> $50
+      </p>
+      <p class="italic text-gray-600">
+        Uni Level for 10 levels as example
+      </p>
+      <p class="text-gray-700 font-semibold">
+        PV 50 (it’s not required but achieved monthly) — Just recruit 3
+        downline
+      </p>
+    </div>
+
+    <!-- ✅ Table Section -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-300 divide-y divide-gray-200 shadow-sm rounded-lg">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              Step
+            </th>
+            <th class="px-4 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              Calculation
+            </th>
+            <th class="px-4 py-3 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              Total
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr>
+            <td class="px-4 py-3">1</td>
+            <td class="px-4 py-3">50 × 30% × 3 = $45</td>
+            <td class="px-4 py-3 font-semibold">$45</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">2</td>
+            <td class="px-4 py-3">50 × 15% × 9 = $90</td>
+            <td class="px-4 py-3 font-semibold">$135</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">3</td>
+            <td class="px-4 py-3">50 × 5% × 27 = $135</td>
+            <td class="px-4 py-3 font-semibold">$270</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">4</td>
+            <td class="px-4 py-3">50 × 5% × 81 = $405</td>
+            <td class="px-4 py-3 font-semibold">$675</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">5</td>
+            <td class="px-4 py-3">50 × 3% × 243 = $364.5</td>
+            <td class="px-4 py-3 font-semibold">$1039.5</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">6</td>
+            <td class="px-4 py-3">50 × 2% × 729 = $729</td>
+            <td class="px-4 py-3 font-semibold">$1768.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Stats Section -->
+    <div class="text-center mb-8">
+      <h2 class="text-xl font-semibold text-gray-800">
+        Total initial & potential:
+        <span class="text-yellow-600 font-bold">256,645/Month</span>
+      </h2>
+      <p class="text-gray-700 font-medium">Total Members: 88,572</p>
+    </div>
+
+    <!-- Reward Card Section -->
+    <div
+      class="bg-yellow-50 border border-yellow-300 rounded-lg shadow-md p-6 md:p-8 space-y-6 text-gray-800 leading-relaxed">
+      <p>
+        <strong class="text-yellow-800">$30,000 cash reward</strong> for 3
+        active Ambassadors in first level and every down line has the minimum
+        of 3 down lines for 10 levels within 1 month after signing as
+        Ambassador. And will be qualified for Diamond membership for life.
+        Will enjoy the privilege of VIP treatment; first round of people to
+        take pictures with our CEO; VIP seating in the conferences.
+      </p>
+
+      <p>
+        <strong class="text-yellow-800">$20,000 cash reward.</strong> The same
+        as the above except complete it in 3 months. Will be qualified as
+        Emerald membership for life. Will enjoy the privilege of VIP
+        treatment; second round of people to take pictures with our CEO;
+        second VIP seating in the conferences.
+      </p>
+
+      <p>
+        <strong class="text-yellow-800">$10,000 cash reward if complete in 6 months.</strong>
+        Gold membership for life. Will enjoy the privilege of VIP treatment;
+        third round of people to take pictures with our CEO; third level VIP
+        seating in the conferences.
+      </p>
+
+      <p>
+        <strong class="text-yellow-800">$5,000 cash reward if complete in 9 months.</strong>
+        Silver membership for life. Will enjoy the privilege of VIP treatment;
+        fourth round of people to take pictures with our CEO; fourth level VIP
+        seating in the conferences.
+      </p>
+
+      <p>
+        <strong class="text-yellow-800">$2,500 cash reward if complete in 1 year.</strong>
+        Brown membership for life. Will enjoy the privilege of VIP treatment;
+        fifth round of people to take pictures with our CEO; fifth level VIP
+        seating in the conferences.
+      </p>
+    </div>
+  </main>
+
+
+  <section class="bg-gray-200 py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-black">
+      ABOUT US
+    </h1>
+  </section>
+
+  <!-- 🔹 About Content Section -->
+  <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Left Text -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Who we are Avani</h2>
+
+      <p class="text-gray-800 font-semibold leading-relaxed mb-4">
+        Avani International is under the leadership of our CEO Ms. Carola Lueder.
+        A very successful real estate professional in the National level. Originally
+        from Germany and has been living in Vancouver, California and Miami.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Carola Lueder has the kind of expertise, determination, and grit that any real estate client
+        would be lucky to experience. Her sterling reputation has earned her much well-deserved
+        recognition and a number of industry awards, proving that there is nothing Carola can’t
+        accomplish in any business when she sets her mind to it.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        She has conducted numerous seminars and lectures throughout the nation with strong sales,
+        speech and educational skills.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center">
+      <img src="https://i.ibb.co/sV7hQyG/woman-profile.jpg" alt="Avani CEO"
+        class="rounded-full shadow-lg w-72 h-72 object-cover border-4 border-gray-100" />
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Image with Curved Edge -->
+    <div class="half-rounded-left shadow-lg">
+      <img src="https://images.unsplash.com/photo-1581092335071-7c12d64b6b4f?auto=format&fit=crop&w=800&q=80"
+        alt="Globe in Hand" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Right Text Section -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">What we do Avani</h2>
+
+      <p class="text-yellow-600 font-semibold mb-2">
+        Avani’, is from Sanskrit <span class="font-bold text-black">अवनि</span>, means “the earth”.
+      </p>
+
+      <h3 class="font-bold text-lg mb-2">Our Mission Statement:</h3>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Avani International will do the for-profits business for nonprofit operations.
+        Our goal is to provide the best services and prices available for our members.
+        Avani will devote 100% of the profit to do:
+      </p>
+
+      <ul class="list-decimal list-inside text-gray-800 space-y-1 mb-4">
+        <li>Waste management</li>
+        <li>Green energy projects</li>
+        <li>Disaster response</li>
+        <li>Cultural exchange</li>
+        <li>Education program for needed kids globally</li>
+      </ul>
+
+      <p class="text-gray-800 leading-relaxed">
+        <span class="text-yellow-600 font-semibold">“We are the world”</span> as our slogan and is looking for all
+        people around the world
+        to bind together to make a better world.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-yellow-400 text-black py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+    <div class="text-sm space-x-4 mb-2 md:mb-0">
+      <a href="#" class="hover:underline">Terms & Conditions</a>
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Refund Policy</a>
+    </div>
+    <p class="text-sm">© 2025 Avani. All Rights Reserved.</p>
+  </footer>
+
+
+
+  <!-- ✅ Flowbite JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

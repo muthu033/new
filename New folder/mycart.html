@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avani | My Cart</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-black text-white flex justify-between items-center px-8 py-4">
+    <div class="flex items-center space-x-3">
+      <img src="https://avani.biz/assets/images/avani_logo.png" alt="Avani Logo" class="h-8">
+    </div>
+
+    <!-- My Cart Button -->
+    <button data-drawer-target="drawer-right-cart" data-drawer-show="drawer-right-cart" data-drawer-placement="right" aria-controls="drawer-right-cart"
+      class="flex items-center space-x-2 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-md shadow-md transition">
+      <i class="fa-solid fa-cart-shopping text-lg"></i>
+      <span>My Cart (2)</span>
+    </button>
+  </header>
+
+  <!-- Main Content Placeholder -->
+  <main class="flex items-center justify-center h-[70vh]">
+    <h1 class="text-2xl font-semibold text-gray-700">Welcome to Avani Store 🛍️</h1>
+  </main>
+
+  <!-- Drawer / Slide Cart -->
+  <div id="drawer-right-cart" class="fixed top-0 right-0 z-40 h-screen w-80 p-4 overflow-y-auto transition-transform translate-x-full bg-white shadow-xl" tabindex="-1" aria-labelledby="drawer-right-cart-label">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center border-b pb-3">
+      <h5 id="drawer-right-cart-label" class="text-xl font-bold text-gray-800 flex items-center space-x-2">
+        <i class="fa-solid fa-cart-shopping text-yellow-500"></i>
+        <span>My Cart</span>
+      </h5>
+      <button type="button" data-drawer-hide="drawer-right-cart" aria-controls="drawer-right-cart" class="text-gray-500 hover:text-gray-800">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Empty Cart Message (hidden when items exist) -->
+    <div id="emptyCart" class="text-center py-12 text-gray-500 hidden">
+      <p>No products in the cart.</p>
+    </div>
+
+    <!-- Cart Items -->
+    <div id="cartItems" class="space-y-4 mt-4">
+
+      <!-- Cart Item 1 -->
+      <div class="flex items-center justify-between border-b pb-3">
+        <img src="https://img.freepik.com/free-photo/beautiful-girl-yellow-suitcase_144627-31468.jpg" alt="Travel Bag" class="h-16 w-16 rounded-md object-cover">
+        <div class="flex-1 ml-3">
+          <h6 class="font-semibold text-gray-800">Travel Bag</h6>
+          <p class="text-sm text-gray-500">$49.99</p>
+        </div>
+        <button onclick="removeItem(this)" class="text-gray-400 hover:text-red-600">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="flex items-center justify-between border-b pb-3">
+        <img src="https://img.freepik.com/free-photo/modern-microwave-kitchen_144627-28891.jpg" alt="Mini Microwave" class="h-16 w-16 rounded-md object-cover">
+        <div class="flex-1 ml-3">
+          <h6 class="font-semibold text-gray-800">Mini Microwave</h6>
+          <p class="text-sm text-gray-500">$89.00</p>
+        </div>
+        <button onclick="removeItem(this)" class="text-gray-400 hover:text-red-600">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Cart Footer -->
+    <div id="cartFooter" class="border-t mt-5 pt-4">
+      <div class="flex justify-between font-semibold text-gray-800">
+        <span>Subtotal</span>
+        <span id="subtotal">$138.99</span>
+      </div>
+      <button class="w-full mt-4 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 rounded-md">
+        Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Flowbite JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <script>
+    // Remove Item Function
+    function removeItem(button) {
+      const item = button.closest('.flex');
+      item.remove();
+
+      // Check if cart is empty
+      const cartItems = document.querySelectorAll('#cartItems .flex');
+      if (cartItems.length === 0) {
+        document.getElementById('emptyCart').classList.remove('hidden');
+        document.getElementById('cartFooter').classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
